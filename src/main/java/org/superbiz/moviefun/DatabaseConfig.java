@@ -10,8 +10,8 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 public class DatabaseConfig {
 
     @Bean
-    DatabaseServiceCredentials serviceCredentials(@Value("${vcap.services}") String vcapSerivces) {
-        return new DatabaseServiceCredentials(vcapSerivces);
+    DatabaseServiceCredentials serviceCredentials(@Value("${vcap.services}") String env) {
+        return new DatabaseServiceCredentials(env);
     }
 
     @Bean
