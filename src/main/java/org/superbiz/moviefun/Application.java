@@ -26,11 +26,6 @@ public class Application {
         return new ServletRegistrationBean(actionServlet, "/moviefun/*");
     }
 
-    @Bean()
-    public DatabaseServiceCredentials databaseServiceCredentials(@Value("#{environment.VCAP_SERVICES}")String env)
-    {
-        return new DatabaseServiceCredentials(env);
-    }
 
     @Bean
     public DataSource albumsDataSource(DatabaseServiceCredentials serviceCredentials) {
