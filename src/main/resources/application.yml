@@ -7,9 +7,9 @@ spring:
 #  datasources:
 #    movies:
 #      url: jdbc:mysql://localhost:3306/movies?useSSL=false
-#      username: root
+#      username: m_777297
 #      password:
 #    albums:
 #      url: jdbc:mysql://localhost:3306/albums?useSSL=false
-#      username: root
+#      username: m_777297
 #      password:
