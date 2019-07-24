@@ -1,7 +1,5 @@
 package org.superbiz.moviefun;
 
-import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
@@ -9,7 +7,6 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
-import javax.sql.DataSource;
 
 @SpringBootApplication(exclude = {
         DataSourceAutoConfiguration.class,
